@@ -13,6 +13,7 @@ class PostController extends Controller
         //hello
         // hi
         //123
+        //456
         $posts = Post::with('category')->get();
         return view('posts.index', compact('posts'));
     }

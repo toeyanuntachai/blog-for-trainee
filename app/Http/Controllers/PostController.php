@@ -22,6 +22,7 @@ class PostController extends Controller
     {
         $categories = Category::all();
 dd($categories);
+
         return view('posts.create', compact('categories'));
     }
 

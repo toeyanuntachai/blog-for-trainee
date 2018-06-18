@@ -12,7 +12,7 @@ class PostController extends Controller
     {  ////sfsdfsf sd
         /// hello
         /// boy 
-
+        ///yyyyyyyy
         $posts = Post::with('category')->get();
 
         return view('posts.index', compact('posts'));

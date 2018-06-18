@@ -9,19 +9,14 @@ use App\Post;
 class PostController extends Controller
 {
     public function index()
-    {  ////sfsdfsf sd
-        /// hello
-        /// boy
-        /// sd
+    {
         $posts = Post::with('category')->get();
-        echo "sadasd";
         return view('posts.index', compact('posts'));
     }
 
     public function create()
     {
         $categories = Category::all();
-dd($categories);
 
         return view('posts.create', compact('categories'));
     }

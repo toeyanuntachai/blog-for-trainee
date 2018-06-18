@@ -49,7 +49,7 @@ class PostController extends Controller
 
     public function destroy(Post $post)
     {
-        //hello git 
+        //hello git  123
         $post->delete();
 
         return redirect()->route('posts.list')->withSuccess('ลบโพสเรียบร้อย');

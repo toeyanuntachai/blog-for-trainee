@@ -14,7 +14,7 @@ class PostController extends Controller
         /// boy
         /// sd
         $posts = Post::with('category')->get();
-
+        echo "sadasd";
         return view('posts.index', compact('posts'));
     }
 
